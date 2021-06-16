@@ -1,0 +1,8 @@
+[Unit]
+Description=Restore IPtable Rules on reboot
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/bin/bash -c '/root/iptable-roles/iptable-security.sh'
