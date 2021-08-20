@@ -10,4 +10,5 @@ do
 	iptables -A INPUT -p udp --dport $i -j DROP
 done
 iptables -A INPUT -s 65.21.13.226 -p ICMP --icmp-type 8 -j ACCEPT
+iptables -A INPUT -s 65.21.13.232 -p ICMP --icmp-type 8 -j ACCEPT
 iptables -A INPUT -p ICMP --icmp-type 8 -j DROP
