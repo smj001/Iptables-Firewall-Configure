@@ -38,54 +38,20 @@
 193.141.126.253
 # Middlewear
 193.141.126.106
-# test-middlewear
-193.141.126.246
-# ansible-server
-193.141.126.39
-# dns
-193.141.126.41
-# dns
-193.141.126.42
-# dns
-193.141.126.43
-# dns
-193.141.126.44
-# dns
-193.141.126.45
-# dns
-193.141.126.46
 # arazcloud web site
 193.141.126.62
+# ansible-server
+193.141.126.39
+# Telegram Bot
+65.21.13.253
 # Host-iran
 193.141.126.89
-# Hostiran Servers
-45.92.94.190
-45.92.94.191
-45.92.94.192
-45.92.94.193
-45.92.94.194
-45.92.94.195
-45.92.94.196
-45.92.94.197
-45.92.94.198
-45.92.94.254
-# Milad-Win
-45.92.94.121
-# Milad-Win
-45.92.94.159
-# Zabbix-Hostiran
-45.92.94.207
-# VPN
-45.92.94.217
-# VPN
-45.92.94.218
-# Office
-5.202.75.170
-# Germany4 Zabbix-Server-Germany-4
-65.21.13.232
-# Germany4 Tech-Team
-65.21.13.253
-# Germany5 Zabbix-Server-Germany-5
-65.21.14.47
-# ArazCloud Host Germany - VPN
-65.21.28.172
+193.141.126.132
+65.21.13.222
+# VPN-Germany
+63.21.14.51
+# VPN-Iran
+193.141.126.125
+# Win-Iran
+193.141.126.134
+
