@@ -20,9 +20,9 @@ do
         echo "$j --> $i/udp"
 	done
     iptables -A INPUT -p tcp --dport $i -j DROP
-    echo "Drop all TCP connections"
+    echo "Drop TCP connections in $i"
 	iptables -A INPUT -p udp --dport $i -j DROP
-    echo "Drop all UDP connections"
+    echo "Drop UDP connections in $i"
 done
 
 iptables -A INPUT -s 65.21.13.226 -p ICMP --icmp-type 8 -j ACCEPT
