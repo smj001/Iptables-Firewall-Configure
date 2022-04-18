@@ -14,7 +14,7 @@ fi
 echo "access list:"
 
 # Find all allocated port in system but running netstat -ntpl
-for i in $(netstat -ntpl | awk '{ print $4}' | grep -v 18080 | awk -F ":" '{print $NF}' | grep -v "^$" | sort | grep -v [a-z] | uniq)
+for i in $(netstat -ntpl | awk '{ print $4}' | awk -F ":" '{print $NF}' | grep -v "^$" | sort | grep -v [a-z] | uniq)
 do
     # export white IPs from ipwhitelist.txt file
 	for j in $(cat ipwhitelist.txt | sed '/^#/d' | sed '/^$/d')
@@ -33,9 +33,6 @@ do
 	iptables -A INPUT -p udp --dport $i -j DROP
     echo "Drop UDP connections in $i"
 done
-
-iptables -A INPUT -s 65.21.13.226 -p ICMP --icmp-type 8 -j ACCEPT
-echo "ICMP allow to 65.21.13.226"
 
 # Drop all ICMP Packets for deny all ping requests.
 iptables -A INPUT -p ICMP --icmp-type 8 -j DROP
